@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Archive Works</title>
+    <!-- 見た目を整えるためのTailwind CSSを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- フォントの読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- ▼ ヘッダー部分 ▼ -->
+    <header class="bg-white shadow-sm py-16 px-4 sm:px-6 lg:px-8 text-center border-b border-slate-200">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">My Archives</h1>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">今まで作成したWebサイトやプロジェクトのまとめ</p>
+    </header>
+
+    <!-- ▼ メインコンテンツ（作品一覧） ▼ -->
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        
+        <!-- ==============================================
+             ▼▼▼ 「ツール」セクション ▼▼▼
+        =============================================== -->
+        <section class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="w-2 h-8 bg-indigo-500 rounded-full mr-3"></div>
+                <h2 class="text-3xl font-extrabold text-slate-800 tracking-tight">ツール</h2>
+            </div>
+            
+            <!-- ツール作品のグリッドレイアウト -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- ▼ ツール作品1つ目 ▼ -->
+                <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <!-- 【1】画像を貼り付ける場所 -->
+                    <div class="aspect-w-16 aspect-h-9 bg-slate-100">
+                        <img src="gcd-lcm-tool.PNG" alt="GCD-LCM-TOOLのサムネイル画像" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">GCD-LCM-TOOL</h3>
+                        <p class="text-slate-600 text-sm mb-6">
+                            私が初めて作ったサイト・ツールです！<br>最小公倍数と最大公約数が計算できます。<br>ちなみにこれはもう更新しないつもりです。なぜかって？自分で考えてください（逃）
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <!-- 【2】公開サイトのURL -->
+                            <a href="https://coriander-gif.github.io/gcd-lcm-tool/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-indigo-600 text-white py-2.5 px-4 rounded-lg font-semibold hover:bg-indigo-700 transition-colors text-sm">サイトを見る</a>
+                            <!-- 【3】GitHubのURL -->
+                            <a href="https://github.com/coriander-gif/gcd-lcm-tool" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-100 text-slate-700 border border-slate-200 py-2.5 px-4 rounded-lg font-semibold hover:bg-slate-200 transition-colors text-sm">コードを見る</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ▼ ツール作品2つ目 ▼ -->
+                <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-w-16 aspect-h-9 bg-slate-100">
+                        <img src="General-Purpose Expansion and Factorization Tool.PNG" alt="なんでも展開・因数分解ツールのサムネイル画像" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">なんでも展開・因数分解ツール</h3>
+                        <p class="text-slate-600 text-sm mb-6">
+                            GCD-LCM-TOOLと兄弟です。展開と<br>因数分解ができます。だがしかし！<br>「なんでも」とか言ってますが2乗とかは<br>できません。「なんでも」の意味とは。
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="https://coriander-gif.github.io/Divisor-and-Multiple-tool/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-indigo-600 text-white py-2.5 px-4 rounded-lg font-semibold hover:bg-indigo-700 transition-colors text-sm">サイトを見る</a>
+                            <a href="https://github.com/coriander-gif/expansion-factorization-tool" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-100 text-slate-700 border border-slate-200 py-2.5 px-4 rounded-lg font-semibold hover:bg-slate-200 transition-colors text-sm">コードを見る</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ==============================================
+             ▼▼▼ 「ゲーム」セクション ▼▼▼
+        =============================================== -->
+        <section>
+            <div class="flex items-center mb-8">
+                <!-- ゲームセクションは少し色（ピンク/紫系）を変えてポップに -->
+                <div class="w-2 h-8 bg-pink-500 rounded-full mr-3"></div>
+                <h2 class="text-3xl font-extrabold text-slate-800 tracking-tight">ゲーム</h2>
+            </div>
+            
+            <!-- ゲーム作品のグリッドレイアウト -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- ▼ ゲーム作品1つ目 ▼ -->
+                <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <!-- 【1】画像を貼り付ける場所 -->
+                    <div class="aspect-w-16 aspect-h-9 bg-slate-100">
+                        <img src="Pitching simulator.PNG" alt="本格ピッチングシミュレーターのサムネイル画像" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">本格ピッチングシミュレーター</h3>
+                        <p class="text-slate-600 text-sm mb-6">
+                            初めてのゲームです。ほとんどAIです。<br>でも、なんかめちゃくちゃ上手くできてます。これからも更新していく予定（予定）<br>なので、よろしくお願いします
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <!-- 【2】公開サイトのURL -->
+                            <a href="https://coriander-gif.github.io/Baseball-Simulator/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-pink-600 text-white py-2.5 px-4 rounded-lg font-semibold hover:bg-pink-700 transition-colors text-sm">遊んでみる</a>
+                            <!-- 【3】GitHubのURL -->
+                            <a href="https://github.com/coriander-gif/Baseball-Simulator" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-100 text-slate-700 border border-slate-200 py-2.5 px-4 rounded-lg font-semibold hover:bg-slate-200 transition-colors text-sm">コードを見る</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ▼ ゲーム作品2つ目 ▼ -->
+                <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-w-16 aspect-h-9 bg-slate-100">
+                        <img src="shogi.PNG" alt="特殊カード将棋のサムネイル画像" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">特殊カード将棋</h3>
+                        <p class="text-slate-600 text-sm mb-6">
+                            2つ目のゲームです。完全に思いつきで<br>作りました。ちなみに主は将棋絶望的に<br>弱いです。思いつきで指してるんだもん、<br>しかたないよね。
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="https://coriander-gif.github.io/Special-Card-Shogi-Game/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-pink-600 text-white py-2.5 px-4 rounded-lg font-semibold hover:bg-pink-700 transition-colors text-sm">遊んでみる</a>
+                            <a href="https://github.com/coriander-gif/Special-Card-Shogi-Game" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-100 text-slate-700 border border-slate-200 py-2.5 px-4 rounded-lg font-semibold hover:bg-slate-200 transition-colors text-sm">コードを見る</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ▼ フッター部分 ▼ -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center mt-12">
+        <p class="text-sm">&copy; 2026 My Archives. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

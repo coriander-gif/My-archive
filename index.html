@@ -16,28 +16,35 @@
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- ▼ ヘッダー部分 ▼ -->
-    <header class="bg-white shadow-sm py-16 px-4 sm:px-6 lg:px-8 text-center border-b border-slate-200">
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">My Archives</h1>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">今まで作成したWebサイトやプロジェクトのまとめ</p>
-    </header>
-
-    <!-- ▼ メインコンテンツ（作品一覧） ▼ -->
-    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        
-        <!-- ==============================================
-             ▼▼▼ 「ツール」セクション ▼▼▼
-        =============================================== -->
-        <section class="mb-20">
-            <div class="flex items-center mb-8">
-                <div class="w-2 h-8 bg-indigo-500 rounded-full mr-3"></div>
-                <h2 class="text-3xl font-extrabold text-slate-800 tracking-tight">ツール</h2>
-            </div>
+    <!-- ▼ メインページ領域（ヘッダーも含めて丸ごと切り替えるために移動） ▼ -->
+    <div id="main-page">
+        <!-- ▼ ヘッダー部分 ▼ -->
+        <header class="relative bg-white shadow-sm py-16 px-4 sm:px-6 lg:px-8 text-center border-b border-slate-200">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">My Archives</h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">今まで作成したWebサイトやプロジェクトのまとめ</p>
             
-            <!-- ツール作品のグリッドレイアウト -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- ▼ プロフィールアイコンボタン（右上） ▼ -->
+            <button id="profile-btn" class="absolute top-4 right-4 md:top-6 md:right-6 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm border border-slate-200 hover:bg-slate-50 hover:shadow transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+            </button>
+        </header>
 
-                <!-- ▼ ツール作品1つ目 ▼ -->
+        <!-- ▼ メインコンテンツ（作品一覧） ▼ -->
+        <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            
+            <!-- ==============================================
+                 ▼▼▼ 「ツール」セクション ▼▼▼
+            =============================================== -->
+            <section class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="w-2 h-8 bg-indigo-500 rounded-full mr-3"></div>
+                    <h2 class="text-3xl font-extrabold text-slate-800 tracking-tight">ツール</h2>
+                </div>
+            
+                <!-- ツール作品のグリッドレイアウト -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                     <!-- 【1】画像を貼り付ける場所 -->
                     <div class="aspect-w-16 aspect-h-9 bg-slate-100">
@@ -100,7 +107,7 @@
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-slate-900 mb-2">本格ピッチングシミュレーター</h3>
                         <p class="text-slate-600 text-sm mb-6">
-                            初めてのゲームです。ほとんどAIです。<br>でも意外と出来が良いです。最近のAIは<br>すごいですね。一応4つのモードを搭載しているのですが、AIクオリティで投球モード以外<br>全て微妙です。うーん、やっぱりAIは発展途上だなぁ。
+                            初めてのゲームです。ほとんどAIです。<br>でも意外と出来が良いです。最近のAIは<br>すごいですね。一応4つのモードを搭載しているのですが、AIクオリティで投球モード<br>以外全て微妙です。うーん、やっぱりAIは発展途上だなぁ。
                         </p>
                         <div class="flex flex-col sm:flex-row gap-3">
                             <!-- 【2】公開サイトのURL -->
@@ -162,6 +169,23 @@
                     </div>
                 </article>
 
+                <!-- ▼ ゲーム作品5つ目 ▼ -->
+                <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-w-16 aspect-h-9 bg-slate-100">
+                        <img src="Airline.PNG" alt="飛行機会社経営シミュレータのサムネイル画像" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">飛行機会社経営シミュレータ</h3>
+                        <p class="text-slate-600 text-sm mb-6">
+                            ついに将棋じゃないゲームｷﾏｼﾀ。多分過去最高の出来です。まだ完全に完成はしていないのですが、一応遊べる段階なので公開してます。順次アップデートしていくつもりなのでよろしく。え？「日本の形がおかしい」？「色合いがAI」？黙れぇぇい！！
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="https://coriander-gif.github.io/Airline-Management-Simulator/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-pink-600 text-white py-2.5 px-4 rounded-lg font-semibold hover:bg-pink-700 transition-colors text-sm">遊んでみる</a>
+                            <a href="https://github.com/coriander-gif/Airline-Management-Simulator" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-slate-100 text-slate-700 border border-slate-200 py-2.5 px-4 rounded-lg font-semibold hover:bg-slate-200 transition-colors text-sm">コードを見る</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </section>
 
@@ -171,6 +195,67 @@
     <footer class="bg-slate-900 text-slate-400 py-8 text-center mt-12">
         <p class="text-sm">&copy; 2026 My Archives. All rights reserved.</p>
     </footer>
+    </div>
 
+    <!-- ▼ プロフィール専用ページ（明るい白ベースに変更） ▼ -->
+    <div id="profile-page" class="hidden min-h-screen bg-slate-50 text-slate-800 flex flex-col justify-between p-6 sm:p-12">
+        <!-- ヘッダー（戻るボタン） -->
+        <div class="max-w-4xl w-full mx-auto flex justify-start">
+            <button id="back-btn" class="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-slate-700 px-5 py-2.5 rounded-full font-semibold transition-colors border border-slate-200 shadow-sm">
+                <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                作品一覧に戻る
+            </button>
+        </div>
+        
+        <!-- プロフィールメインコンテンツ -->
+        <div class="max-w-3xl w-full mx-auto text-center py-12">
+            <div class="w-36 h-36 mx-auto rounded-full bg-white flex items-center justify-center border-4 border-indigo-100 mb-8 shadow-md">
+                <svg class="w-20 h-20 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+            </div>
+            <h2 class="text-4xl sm:text-6xl font-black text-slate-900 mb-3 tracking-tight">coriander-gif</h2>
+            <p class="text-indigo-600 font-bold tracking-widest uppercase mb-10 text-lg">About Creator</p>
+            
+            <div class="bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 text-left shadow-sm space-y-4">
+                <h3 class="text-xl font-bold text-slate-900 border-b border-slate-100 pb-3">自己紹介</h3>
+                <p class="text-slate-600 leading-relaxed sm:text-lg">
+                    プログラミングを勉強しながら、作ってみたいツールやゲームを自由に開発しています。
+                </p>
+                <p class="text-slate-600 leading-relaxed sm:text-lg">
+                    最近は将棋の奥深さに気づき、将棋ゲームシリーズを連発して友人との対戦を楽しんでいます（笑）。
+                </p>
+            </div>
+        </div>
+
+        <!-- フッター -->
+        <div class="text-center text-slate-400 text-sm">
+            &copy; 2026 coriander-gif
+        </div>
+    </div>
+
+    <!-- ▼ 画面切り替え用のJavaScript ▼ -->
+    <script>
+        const profileBtn = document.getElementById('profile-btn');
+        const backBtn = document.getElementById('back-btn');
+        const mainPage = document.getElementById('main-page');
+        const profilePage = document.getElementById('profile-page');
+
+        // プロフィールページへ切り替え
+        profileBtn.addEventListener('click', () => {
+            mainPage.classList.add('hidden');
+            profilePage.classList.remove('hidden');
+            window.scrollTo(0, 0);
+        });
+
+        // メインページ（作品一覧）へ戻る
+        backBtn.addEventListener('click', () => {
+            profilePage.classList.add('hidden');
+            mainPage.classList.remove('hidden');
+            window.scrollTo(0, 0);
+        });
+    </script>
 </body>
 </html>
